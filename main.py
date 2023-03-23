@@ -92,7 +92,8 @@ def write_file(format):
     elif format == 'json':
         with open('report.json', 'w', encoding='utf-8') as f:
             json.dump(friends_info, f, ensure_ascii=False, indent=4)
-    # elif format == 'yaml':                                            # для того чтобы отдать отчет в другом формате (yaml), достаточно добавить такой блок кода
+        ques = input('Отчет создался успешно! ')
+            # elif format == 'yaml':                                            # для того чтобы отдать отчет в другом формате (yaml), достаточно добавить такой блок кода
     #     with open('report.yaml', 'w', encoding='utf-8') as f:         # импортировать yaml
     #         yaml.dump(friends_info, f, allow_unicode=True)
     else:
